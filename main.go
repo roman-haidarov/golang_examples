@@ -6,6 +6,7 @@ import (
 	"golang_examples/lesson_1"
 	"golang_examples/lesson_2"
 	"golang_examples/lesson_3"
+	"golang_examples/lesson_4"
 )
 
 func main() {
@@ -34,4 +35,11 @@ func main() {
 	}
 
 	fmt.Println(number)
+
+
+	inc := lesson_4.Increment()
+	fmt.Println(inc())
+	fmt.Println(inc())
+	fmt.Println(inc())
+	fmt.Println(inc())
 }
