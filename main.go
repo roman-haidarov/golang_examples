@@ -5,6 +5,7 @@ import (
 	"log"
 	"golang_examples/lesson_1"
 	"golang_examples/lesson_2"
+	"golang_examples/lesson_3"
 )
 
 func main() {
@@ -16,6 +17,7 @@ func main() {
 
 	fmt.Println(message)
 
+
 	message, err = lesson_2.Prediction("вт")
 	if err != nil {
 		log.Println(message, err)
@@ -23,4 +25,13 @@ func main() {
 	}
 
 	fmt.Println(message)
+
+
+	number, err := lesson_3.FindMin(23, -34, 254)
+	if err != nil {
+		log.Println(number, err)
+		return
+	}
+
+	fmt.Println(number)
 }
