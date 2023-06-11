@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"golang_examples/lesson_1"
+	"golang_examples/lesson_2"
 )
 
 func main() {
@@ -15,4 +16,11 @@ func main() {
 
 	fmt.Println(message)
 
+	message, err = lesson_2.Prediction("вт")
+	if err != nil {
+		log.Println(message, err)
+		return
+	}
+
+	fmt.Println(message)
 }
