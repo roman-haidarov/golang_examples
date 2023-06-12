@@ -7,6 +7,7 @@ import (
 	"golang_examples/lesson_2"
 	"golang_examples/lesson_3"
 	"golang_examples/lesson_4"
+	"golang_examples/lesson_5"
 )
 
 func main() {
@@ -42,4 +43,25 @@ func main() {
 	fmt.Println(inc())
 	fmt.Println(inc())
 	fmt.Println(inc())
+
+
+	sayHello := "Hello, dude!"
+	responseHello := "Hello, helo... "
+
+	lesson_5.PrintMessage(sayHello)
+	fmt.Println(sayHello)
+
+	fmt.Println(responseHello)
+	lesson_5.ChangeMessage(&responseHello)
+	fmt.Println(responseHello)
+
+	num := 5
+	var p *int
+	p = &num
+
+	fmt.Println(*p)
+	fmt.Println(num)
+
+	*p = 15
+	fmt.Println(num)
 }
